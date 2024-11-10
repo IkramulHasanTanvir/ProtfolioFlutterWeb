@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -36,7 +37,7 @@ class GlassContent extends StatelessWidget {
                     .copyWith(color: Colors.white),
               ),
               Text(
-                "Robbie \nRutherford",
+                "i'm Tanvir \nHridoy",
                 style: TextStyle(
                   fontSize: 100,
                   fontWeight: FontWeight.bold,
@@ -44,8 +45,23 @@ class GlassContent extends StatelessWidget {
                   height: 1.5,
                 ),
               ),
+              DefaultTextStyle(
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineSmall!
+                    .copyWith(color: Colors.white),
+                child: AnimatedTextKit(
+                  repeatForever: true,
+                  animatedTexts: [
+                    //TyperAnimatedText('Software Engineer |'),
+                    TyperAnimatedText('Flutter Developer |'),
+                    TyperAnimatedText('Mobile App Developer |'),
+                    TyperAnimatedText("UI/UX Designer |"),
+                  ],
+                ),
+              ),
               Text(
-                "Creative Design Director",
+                "Passionate about Building Cross-Platform Solutions.",
                 style: Theme.of(context)
                     .textTheme
                     .headlineSmall!

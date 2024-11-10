@@ -71,7 +71,7 @@ class ContactBox extends StatelessWidget {
               ),
               SocalCard(
                 color: Color(0xFFE8F0F9),
-                iconSrc: "assets/images/messanger.png",
+                iconSrc: "assets/images/messenger.png",
                 name: 'TheFlutterWay',
                 press: () {},
               ),
